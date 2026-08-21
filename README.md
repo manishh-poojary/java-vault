@@ -40,20 +40,20 @@ This repo is my personal reference and learning log, built to deepen my understa
 ```
 java-vault/
 │
-├── core-concepts/
+├── core_concepts/
 │   ├── oop/
 │   ├── collections/
 │   ├── multithreading/
-│   └── java8-features/
+│   └── java8_features/
 │
-├── design-patterns/
+├── design_patterns/
 │   ├── creational/
 │   ├── structural/
 │   └── behavioral/
 │
-├── microservice-patterns/
+├── microservice_patterns/
 │   ├── retry/
-│   ├── circuit-breaker/
+│   ├── circuit_breaker/
 │   └── bulkhead/
 │
 └── README.md
