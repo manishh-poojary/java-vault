@@ -28,7 +28,7 @@ package com.toolkit.java.vault.core_concepts.architecture;
  * It includes the Java Virtual Machine (JVM), core libraries, and other components necessary for
  * executing Java programs.
  * - Java Virtual Machine (JVM): An abstract computing machine that enables a computer to run
- * Java programs. It provides a platform-independent execution environment by translating
+ * Java programs. It provides a platform-independent execution envi ronment by translating
  * Java bytecode into machine code for the underlying operating system and hardware.
  */
 
