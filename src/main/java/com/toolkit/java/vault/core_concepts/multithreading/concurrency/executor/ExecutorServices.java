@@ -38,6 +38,12 @@ import static java.util.concurrent.Executors.*;
  * - SingleThreadExecutor: An executor that uses a single worker thread to execute tasks sequentially.
  * - ScheduledThreadPool: An executor that can schedule tasks to run after a delay or periodically.
  *
+ * <p>
+ * Types of Tasks:
+ * - CPU Intensive Tasks: Tasks that require significant CPU processing power, such as complex calculations or data processing.
+ * - I/O Intensive Tasks: Tasks that involve input/output operations, such as reading/writing files, network communication,
+ * or database access.
+ *
  */
 public class ExecutorServices {
 
@@ -58,7 +64,9 @@ public class ExecutorServices {
 
 class FixedThreadPoolExample {
     public static void main(String[] args) {
-        ExecutorService executorService = newFixedThreadPool(3);
+        int coreCount = Runtime.getRuntime().availableProcessors();
+        System.out.println("Available processors: " + coreCount);
+        ExecutorService executorService = newFixedThreadPool(coreCount);
         ExecutorServices.executorFunction(executorService);
         executorService.shutdown();
     }
